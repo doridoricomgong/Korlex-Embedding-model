@@ -1,4 +1,4 @@
-# Korean WordNet (KorLex) Graph Embedding for Improved Semantic Analysis
+# Distance based Korean wordnet(KorLex) embedding model
 
 Welcome to our GitHub repository, dedicated to our research on enhancing semantic analysis in the Korean language through the integration of Korean WordNet (KorLex) Graph Embedding into deep neural network word embeddings.
 
