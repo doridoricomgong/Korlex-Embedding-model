@@ -130,7 +130,7 @@ Thank you for your interest in advancing the understanding of the Korean languag
 
 To get started with our project, follow the steps below:
 
-1. **Installation**: Ensure that Python 3.x is installed on your system. Clone this repository and install the requirements using `pip install -r requirements.txt`.
+1. **Installation**: Ensure that Python 3.8 is installed on your system. Clone this repository and install the requirements using `pip install -r requirements.txt`.
 
 2. **Data Preparation**: The `data/` directory contains the KorLex graph embeddings and evaluation datasets. Make sure to download and place them in the appropriate folders as indicated.
 
@@ -143,9 +143,9 @@ To get started with our project, follow the steps below:
 If you use our work in your research, please consider citing:
 
 ```bibtex
-@inproceedings{your_paper_id,
-  title     = {Enhancing Semantic Analysis in Korean Language Using KorLex Graph Embeddings},
-  author    = {Your Name and Collaborator's Name},
+@inproceedings{paper_id,
+  title     = {Distance based Korean wordnet(KorLex) embedding model},
+  author    = {SeongReol Park° Jung-Hun Lee° JoongMin Shin Sanghyun Cho},
   year      = {2023},
   booktitle = {Proceedings of the NLP Conference}
 }
