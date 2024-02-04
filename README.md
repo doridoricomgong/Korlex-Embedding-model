@@ -16,6 +16,37 @@ The primary aim of our research is to utilize graph embedding vectors generated 
 
 4. **Performance Improvement**: Our method demonstrates an accuracy improvement in analogy analysis, validating our hypothesis that integrating KorLex graph embeddings can significantly enhance semantic analysis capabilities.
 
+## Getting Started
+
+To get started with our project, follow the steps below:
+
+1. **Installation**: Ensure that Python 3.8 is installed on your system. Clone this repository and install the requirements using `pip install -r requirements.txt`.
+
+2. **Data Preparation**: The `data/` directory contains the ws353_korean, new_word_analogy_korean and other datas. Make sure to download and place them in the appropriate folders as indicated.
+   
+# Models training
+Train your own graph embedding model with:
+
+`python3 embeddings.py --input_file TRAINING_DATASET --vocab_file kwn_korean_synsets_vocab.json.gz --use_neighbors`
+our TRAINING_DATASET is bigger than 30GB, it is not on the repository.
+
+# Models evaluation
+
+`python3 evaluation.py MODELFILE SIMFILE0`
+
+`MODELFILE` is the file with synset vectors in word2vec text format.
+
+`SIMFILE` is one of [semantic similarity datasets](https://github.com/uhh-lt/path2vec/tree/master/simlex/). 
+It is expected that `SIMFILE0` will contain Wordnet similarities.
+
+For example, to evaluate on the shortest path metrics (`shp`):
+
+`python3 evaluation.py shp.vec.gz pre_vec/new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph_emb.vec`
+
+`Model                                                                       Wordnet Static `
+
+`new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph 0.9473  0.5121 `
+
 ## Methods Overview
 
 Our approach involves two primary components: the **Graph Metric Embedding Model**, which projects lexical knowledge from KorLex into vector space, and the **Baseline Word Embedding Model**, utilizing FastText for generating 300-dimensional embeddings from news articles. The uniqueness of our method lies in merging these two models to enhance the resultant word vectors.
@@ -111,37 +142,7 @@ For detailed inquiries or contributions, please refer to our documentation and c
 
 Thank you for your interest in advancing the understanding of the Korean language in the realm of computational linguistics.
 
-## Models training
-Train your own graph embedding model with:
 
-python3 embeddings.py --input_file TRAINING_DATASET --vocab_file synsets_vocab.json.gz --use_neighbors
-
-Run python3 embeddings.py -h for help on tunable hyperparameters.
-
-## Models evaluation
-python3 evaluation.py MODELFILE SIMFILE0 SIMFILE1
-
-MODELFILE is the file with synset vectors in word2vec text format.
-
-SIMFILE is one of semantic similarity datasets. It is expected that SIMFILE0 will contain Wordnet similarities, while SIMFILE1 will contain SimLex999 similarities, and that they correspond to the graph distance metrics on which the model was trained. The model will be tested on both of these test sets, and additionally on the raw SimLex999 (dynamically assigning synsets to lemmas).
-
-For example, to evaluate on the shortest path metrics (shp):
-
-python3 evaluation.py shp.vec.gz simlex/simlex_shp.tsv simlex/simlex_synsets/max_shp_human.tsv
-
-Model  Wordnet Static  Dynamic
-
-shp 0.9473  0.5121  0.5551
-
-The resulting score 0.9473 is the Spearman rank correlation between model-produced similarities and WordNet similarities (using SIMFILE0). The second score 0.5121 is calculated on SIMFILE1 (human judgments). The 3rd score (0.5551 in the example) is always calculated on the original Simlex with dynamically selected synsets (see below for details).
-
-## Getting Started
-
-To get started with our project, follow the steps below:
-
-1. **Installation**: Ensure that Python 3.8 is installed on your system. Clone this repository and install the requirements using `pip install -r requirements.txt`.
-
-2. **Data Preparation**: The `data/` directory contains the ws353_korean, new_word_analogy_korean and other datas. Make sure to download and place them in the appropriate folders as indicated.
 
 ## Citation
 
