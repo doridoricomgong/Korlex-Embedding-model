@@ -1,0 +1,38 @@
+(benPark3.7) ai@ai-System-Product-Name:~/다운로드/benPark/fastText/python$ python evaluation_fast.py model_fast.bin fast_rm_new_korean_simlex_shp.tsv fast_rm_new_korean_max_shp_human.tsv
+2022-12-05 15:20:34,694 : INFO : loading 6768873 words for fastText model from model_fast.bin
+2022-12-05 15:21:23,225 : INFO : FastText lifecycle event {'params': 'FastText<vocab=0, vector_size=100, alpha=0.025>', 'datetime': '2022-12-05T15:21:23.217455', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'created'}
+2022-12-05 15:21:23,225 : INFO : Updating model with new vocabulary
+2022-12-05 15:22:28,245 : INFO : FastText lifecycle event {'msg': 'added 6768873 new unique words (100.00% of original 6768873) and increased the count of 0 pre-existing words (0.00% of original 6768873)', 'datetime': '2022-12-05T15:22:28.245787', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'prepare_vocab'}
+2022-12-05 15:23:28,040 : INFO : deleting the raw counts dictionary of 6768873 items
+2022-12-05 15:23:28,040 : INFO : sample=0.0001 downsamples 226 most-common words
+2022-12-05 15:23:28,040 : INFO : FastText lifecycle event {'msg': 'downsampling leaves estimated 1392587029.7755275 word corpus (79.8%% of prior 1744316014)', 'datetime': '2022-12-05T15:23:28.040919', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'prepare_vocab'}
+2022-12-05 15:32:53,135 : INFO : FastText lifecycle event {'msg': 'loaded (8768873, 100) weight matrix for fastText model from model_fast.bin', 'datetime': '2022-12-05T15:32:53.135707', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'load_fasttext_format'}
+2022-12-05 15:33:07,339 : INFO : Pearson correlation coefficient against fast_rm_new_korean_simlex_shp.tsv: 0.1010
+2022-12-05 15:33:07,339 : INFO : Spearman rank-order correlation coefficient against fast_rm_new_korean_simlex_shp.tsv: 0.1883
+2022-12-05 15:33:07,340 : INFO : Pairs with unknown words ratio: 15.0%
+2022-12-05 15:33:23,284 : INFO : Pearson correlation coefficient against fast_rm_new_korean_max_shp_human.tsv: 0.1999
+2022-12-05 15:33:23,284 : INFO : Spearman rank-order correlation coefficient against fast_rm_new_korean_max_shp_human.tsv: 0.1829
+2022-12-05 15:33:23,284 : INFO : Pairs with unknown words ratio: 14.9%
+Model	Wordnet	Static	analogy
+model_fast.bin	0.1883	0.1829	
+(benPark3.7) ai@ai-System-Product-Name:~/다운로드/benPark/fastText/python$ python evaluation_fast.py model_fast.bin fast_rm_new_korean_simlex_lch.tsv fast_rm_new_korean_max_lch_human.tsv
+2022-12-05 15:36:26,364 : INFO : loading 6768873 words for fastText model from model_fast.bin
+2022-12-05 15:37:15,625 : INFO : FastText lifecycle event {'params': 'FastText<vocab=0, vector_size=100, alpha=0.025>', 'datetime': '2022-12-05T15:37:15.624669', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'created'}
+2022-12-05 15:37:15,626 : INFO : Updating model with new vocabulary
+2022-12-05 15:38:22,963 : INFO : FastText lifecycle event {'msg': 'added 6768873 new unique words (100.00% of original 6768873) and increased the count of 0 pre-existing words (0.00% of original 6768873)', 'datetime': '2022-12-05T15:38:22.963524', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'prepare_vocab'}
+2022-12-05 15:39:23,307 : INFO : deleting the raw counts dictionary of 6768873 items
+2022-12-05 15:39:23,307 : INFO : sample=0.0001 downsamples 226 most-common words
+2022-12-05 15:39:23,307 : INFO : FastText lifecycle event {'msg': 'downsampling leaves estimated 1392587029.7755275 word corpus (79.8%% of prior 1744316014)', 'datetime': '2022-12-05T15:39:23.307855', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'prepare_vocab'}
+2022-12-05 15:48:32,539 : INFO : FastText lifecycle event {'msg': 'loaded (8768873, 100) weight matrix for fastText model from model_fast.bin', 'datetime': '2022-12-05T15:48:32.538986', 'gensim': '4.2.0', 'python': '3.7.15 (default, Nov 24 2022, 21:12:53) \n[GCC 11.2.0]', 'platform': 'Linux-5.4.0-126-generic-x86_64-with-debian-buster-sid', 'event': 'load_fasttext_format'}
+2022-12-05 15:48:47,231 : INFO : Pearson correlation coefficient against fast_rm_new_korean_simlex_lch.tsv: 0.1034
+2022-12-05 15:48:47,232 : INFO : Spearman rank-order correlation coefficient against fast_rm_new_korean_simlex_lch.tsv: 0.1883
+2022-12-05 15:48:47,232 : INFO : Pairs with unknown words ratio: 15.0%
+2022-12-05 15:49:02,804 : INFO : Pearson correlation coefficient against fast_rm_new_korean_max_lch_human.tsv: 0.1999
+2022-12-05 15:49:02,805 : INFO : Spearman rank-order correlation coefficient against fast_rm_new_korean_max_lch_human.tsv: 0.1829
+2022-12-05 15:49:02,805 : INFO : Pairs with unknown words ratio: 14.9%
+Model	Wordnet	Static	analogy
+model_fast.bin	0.1883	0.1829	
+
+
+s
+
