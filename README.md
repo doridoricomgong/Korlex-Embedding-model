@@ -47,6 +47,8 @@ For example, to evaluate on the shortest path metrics (`shp`):
 
 `new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph 0.9473  0.5121 `
 
+For the Data and new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph_emb.vec file, Send me a email to fgfgfghjhjhj@naver.com 
+
 ## Methods Overview
 
 Our approach involves two primary components: the **Graph Metric Embedding Model**, which projects lexical knowledge from KorLex into vector space, and the **Baseline Word Embedding Model**, utilizing FastText for generating 300-dimensional embeddings from news articles. The uniqueness of our method lies in merging these two models to enhance the resultant word vectors.
