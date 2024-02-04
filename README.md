@@ -36,12 +36,12 @@ our TRAINING_DATASET is bigger than 30GB, it is not on the repository.
 
 `MODELFILE` is the file with synset vectors in word2vec text format.
 
-`SIMFILE` is one of [semantic similarity datasets](https://github.com/uhh-lt/path2vec/tree/master/simlex/). 
+`SIMFILE` is one of [semantic similarity datasets]. 
 It is expected that `SIMFILE0` will contain Wordnet similarities.
 
 For example, to evaluate on the shortest path metrics (`shp`):
 
-`python3 evaluation.py shp.vec.gz pre_vec/new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph_emb.vec`
+`python3 evaluation.py shp.vec.gz new_korean_sch_embeddings_vsize300_bsize100_lr001_nn-True3_reg-False_graph_emb.vec`
 
 `Model                                                                       Wordnet Static `
 
