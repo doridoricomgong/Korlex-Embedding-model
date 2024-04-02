@@ -22,7 +22,7 @@ To get started with our project, follow the steps below:
 
 1. **Installation**: Ensure that Python 3.8 is installed on your system. Clone this repository and install the requirements using `pip install -r requirements.txt`.
 
-2. **Data Preparation**: The `data/` directory contains the ws353_korean, new_word_analogy_korean and other datas. Make sure to download and place them in the appropriate folders as indicated.
+2. **Data Preparation**: The `data/` directory doesn't contain the ws353_korean, new_word_analogy_korean and other datas(Send me a email to fgfgfghjhjhj@naver.com ). Make sure to download and place them in the appropriate folders as indicated.
    
 # Models training
 Train your own graph embedding model with:
